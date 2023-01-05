@@ -1,7 +1,7 @@
 cookiecutter
 ==============================
 
-otra vez
+Exercise S2 M6 of course MLOps.
 
 Project Organization
 ------------
