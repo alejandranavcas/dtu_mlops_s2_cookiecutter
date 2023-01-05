@@ -1,4 +1,4 @@
-cookiecutter
+DTU MLOps S2-M6
 ==============================
 
 Exercise S2 M6 of course MLOps.
