@@ -1,0 +1,550 @@
+Fri Jan 20 16:34:04 2023    profiling/profile.dat
+
+         5924224 function calls (5841639 primitive calls) in 26.705 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    11730    8.638    0.001    8.638    0.001 {method 'run_backward' of 'torch._C._EngineBase' objects}
+    23460    5.850    0.000    5.850    0.000 {built-in method torch._C._nn.linear}
+   761730    2.180    0.000    2.180    0.000 {built-in method torch.as_tensor}
+    11730    1.482    0.000    1.482    0.000 {built-in method torch.sigmoid}
+    11730    0.748    0.000    0.748    0.000 {built-in method torch.stack}
+    46920    0.663    0.000    0.663    0.000 {method 'add_' of 'torch._C._TensorBase' objects}
+   750000    0.509    0.000    0.509    0.000 /Users/alejandranavarrocastillo/Documents/GitHub/dtu_mlops_s2_cookiecutter/src/models/train_model.py:35(__getitem__)
+    11730    0.499    0.000    3.443    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:166(collate_numpy_array_fn)
+    11730    0.403    0.000    0.403    0.000 {method 'float' of 'torch._C._TensorBase' objects}
+    46916    0.371    0.000    0.371    0.000 {method 'zero_' of 'torch._C._TensorBase' objects}
+    11730    0.315    0.000    0.315    0.000 {method 'softmax' of 'torch._C._TensorBase' objects}
+        1    0.297    0.297   26.697   26.697 /Users/alejandranavarrocastillo/Documents/GitHub/dtu_mlops_s2_cookiecutter/src/models/train_model.py:17(main)
+    35220    0.258    0.000    0.258    0.000 {built-in method torch._ops.profiler._record_function_enter}
+    11730    0.225    0.000    2.145    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:172(<listcomp>)
+    11760    0.223    0.000    0.323    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/sampler.py:241(__iter__)
+    35220    0.221    0.000    0.221    0.000 {built-in method torch.zeros}
+    11730    0.205    0.000    8.252    0.001 /Users/alejandranavarrocastillo/Documents/GitHub/dtu_mlops_s2_cookiecutter/src/models/model.py:18(forward)
+    11730    0.192    0.000    1.006    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/sgd.py:119(step)
+46920/11730    0.188    0.000    4.277    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:88(collate)
+      604    0.178    0.000    0.178    0.000 {method 'decompress' of 'zlib.Decompress' objects}
+    11730    0.169    0.000    0.678    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py:58(<listcomp>)
+    11730    0.169    0.000    0.796    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/optimizer.py:246(zero_grad)
+70380/23460    0.158    0.000    8.508    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1188(_call_impl)
+   750000    0.156    0.000    0.205    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:138(<genexpr>)
+    11730    0.119    0.000    1.634    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/optimizer.py:135(wrapper)
+    35220    0.116    0.000    0.116    0.000 {built-in method torch._ops.profiler._record_function_exit}
+    11730    0.110    0.000    0.110    0.000 {built-in method torch._C._nn.nll_loss_nd}
+   105583    0.105    0.000    0.105    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1256(__getattr__)
+    23460    0.102    0.000    0.102    0.000 {method 'view' of 'torch._C._TensorBase' objects}
+    11760    0.097    0.000    5.439    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:669(_next_data)
+    35220    0.094    0.000    0.385    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/profiler.py:487(__enter__)
+    11730    0.081    0.000    0.743    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/sgd.py:213(_single_tensor_sgd)
+    11732    0.072    0.000    0.277    0.000 {built-in method builtins.all}
+   750030    0.072    0.000    0.100    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/sampler.py:117(__iter__)
+    11730    0.069    0.000    0.069    0.000 {built-in method torch.ones_like}
+    11730    0.061    0.000    8.860    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/__init__.py:103(backward)
+    11730    0.059    0.000    1.112    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/optimizer.py:19(_use_grad)
+    70380    0.059    0.000    0.059    0.000 {built-in method torch._C._get_tracing_state}
+    11760    0.059    0.000    5.730    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:623(__next__)
+    23460    0.058    0.000    5.927    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/linear.py:113(forward)
+    70440    0.058    0.000    0.432    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_ops.py:437(__call__)
+    11730    0.055    0.000    0.135    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/__init__.py:47(_make_grads)
+770074/769862    0.054    0.000    0.054    0.000 {built-in method builtins.len}
+    35220    0.053    0.000    0.194    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/profiler.py:491(__exit__)
+191931/191920    0.048    0.000    0.103    0.000 {built-in method builtins.isinstance}
+    35220    0.045    0.000    0.267    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/profiler.py:478(__init__)
+    11730    0.042    0.000    8.904    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_tensor.py:429(backward)
+      608    0.040    0.000    0.040    0.000 {built-in method zlib.crc32}
+        2    0.037    0.018    0.271    0.135 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/format.py:730(read_array)
+    11790    0.034    0.000    0.034    0.000 {method 'item' of 'torch._C._TensorBase' objects}
+    23468    0.029    0.000    0.042    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/grad_mode.py:227(__init__)
+    11730    0.028    0.000    5.004    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py:53(fetch)
+    23553    0.027    0.000    0.047    0.000 {built-in method _abc._abc_instancecheck}
+    11730    0.027    0.000    0.186    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/loss.py:215(forward)
+    93860    0.027    0.000    0.042    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_tensor.py:928(__hash__)
+    11730    0.027    0.000    0.148    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/functional.py:2637(nll_loss)
+       30    0.026    0.001    0.035    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:574(_save)
+    11730    0.025    0.000    0.775    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:154(collate_tensor_fn)
+    46916    0.021    0.000    0.021    0.000 {method 'requires_grad_' of 'torch._C._TensorBase' objects}
+    11730    0.020    0.000    0.339    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/functional.py:1811(softmax)
+       60    0.019    0.000    0.019    0.000 {method 'tolist' of 'torch._C._TensorBase' objects}
+    11730    0.018    0.000    3.770    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:143(<listcomp>)
+    11766    0.017    0.000    0.017    0.000 {method 'format' of 'str' objects}
+   152645    0.016    0.000    0.016    0.000 {method 'append' of 'list' objects}
+    11730    0.016    0.000    4.293    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:204(default_collate)
+    11730    0.015    0.000    0.759    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/sgd.py:171(sgd)
+    93860    0.015    0.000    0.015    0.000 {built-in method builtins.id}
+    11730    0.015    0.000    0.354    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/activation.py:1389(forward)
+       30    0.014    0.000    0.014    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:289(__exit__)
+11786/11734    0.012    0.000    0.015    0.000 {built-in method _abc._abc_subclasscheck}
+    11730    0.012    0.000    1.493    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/activation.py:293(forward)
+    11730    0.012    0.000    0.012    0.000 {method 'search' of 're.Pattern' objects}
+    35202    0.011    0.000    0.011    0.000 {built-in method torch.is_grad_enabled}
+    23498    0.010    0.000    0.333    0.000 {built-in method builtins.next}
+    35384    0.010    0.000    0.010    0.000 {built-in method builtins.hasattr}
+       30    0.009    0.000    0.009    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:286(__init__)
+       60    0.009    0.000    0.009    0.000 {built-in method torch.randperm}
+    23553    0.008    0.000    0.055    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/abc.py:117(__instancecheck__)
+        1    0.008    0.008   26.705   26.705 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:703(invoke)
+    11730    0.008    0.000    0.008    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/__init__.py:95(_tensor_or_tensors_to_tuple)
+    11730    0.007    0.000    0.007    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/_reduction.py:7(get_enum)
+    11730    0.007    0.000    0.007    0.000 {built-in method torch._C._are_functorch_transforms_active}
+    23580    0.007    0.000    0.007    0.000 {built-in method torch._C._has_torch_function_unary}
+    23468    0.007    0.000    0.007    0.000 {built-in method torch._C._set_grad_enabled}
+      604    0.007    0.000    0.230    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:982(_read1)
+    11730    0.007    0.000    0.266    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:175(collate_numpy_scalar_fn)
+    11760    0.006    0.000    0.338    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617(_next_index)
+      602    0.005    0.000    0.005    0.000 {method 'read' of '_io.BufferedReader' objects}
+    11730    0.005    0.000    0.005    0.000 {method 'numel' of 'torch._C._TensorBase' objects}
+    11734    0.004    0.000    0.004    0.000 {built-in method torch._C._has_torch_function_variadic}
+11786/11734    0.004    0.000    0.019    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/abc.py:121(__subclasscheck__)
+    11730    0.003    0.000    0.003    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/_collections_abc.py:315(__subclasshook__)
+    11790    0.003    0.000    0.003    0.000 {method 'get' of 'dict' objects}
+    11730    0.003    0.000    0.003    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/optimizer.py:117(_optimizer_step_code)
+       30    0.002    0.000    0.009    0.000 {method 'dump' of '_pickle.Pickler' objects}
+    11762    0.002    0.000    0.002    0.000 {built-in method builtins.iter}
+     3240    0.002    0.000    0.004    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:584(persistent_id)
+    11730    0.002    0.000    0.002    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py:83(get_worker_info)
+      120    0.001    0.000    0.003    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_tensor.py:262(_reduce_ex_internal)
+        4    0.001    0.000    0.001    0.000 {method 'uniform_' of 'torch._C._TensorBase' objects}
+      608    0.001    0.000    0.231    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:900(read)
+      597    0.001    0.000    0.005    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:738(read)
+       64    0.001    0.000    0.001    0.000 {built-in method torch.empty}
+       33    0.001    0.000    0.001    0.000 {built-in method builtins.print}
+   150/30    0.001    0.000    0.002    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1378(state_dict)
+      604    0.001    0.000    0.006    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1018(_read2)
+       60    0.001    0.000    0.001    0.000 {method 'random_' of 'torch._C._TensorBase' objects}
+      606    0.001    0.000    0.232    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/format.py:943(_read_bytes)
+      600    0.001    0.000    0.001    0.000 {built-in method numpy.frombuffer}
+     3120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/__init__.py:317(is_storage)
+      150    0.000    0.000    0.001    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1341(_save_to_state_dict)
+       30    0.000    0.000    0.002    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:561(__init__)
+      120    0.000    0.000    0.000    0.000 {method 'detach' of 'torch._C._TensorBase' objects}
+        2    0.000    0.000    0.001    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/format.py:593(_read_array_header)
+      598    0.000    0.000    0.000    0.000 {method 'tell' of '_io.BufferedReader' objects}
+       30    0.000    0.000    0.059    0.002 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:373(save)
+      120    0.000    0.000    0.001    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_tensor.py:251(storage)
+      604    0.000    0.000    0.040    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:935(_update_crc)
+      240    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/storage.py:384(__init__)
+     1188    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_utils.py:650(_element_size)
+        4    0.000    0.000    0.000    0.000 {built-in method _make_subclass}
+     1191    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+      240    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/storage.py:317(__new__)
+        2    0.000    0.000    0.000    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:137(_cpu_tag)
+      120    0.000    0.000    0.000    0.000 {built-in method torch._C._has_storage}
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:204(location_tag)
+       30    0.000    0.000    0.002    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:656(__init__)
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/storage.py:467(__len__)
+      602    0.000    0.000    0.000    0.000 {method 'seek' of '_io.BufferedReader' objects}
+       43    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/tokenize.py:431(_tokenize)
+       30    0.000    0.000    0.000    0.000 {method 'manual_seed' of 'torch._C.Generator' objects}
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/sampler.py:264(__len__)
+      128    0.000    0.000    0.000    0.000 {method 'size' of 'torch._C._TensorBase' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.compile}
+      120    0.000    0.000    0.003    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_tensor.py:223(__reduce_ex__)
+       30    0.000    0.000    0.009    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:303(_open_zipfile_writer)
+      122    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/Documents/GitHub/dtu_mlops_s2_cookiecutter/src/models/train_model.py:38(__len__)
+      597    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1527(<lambda>)
+       31    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+      597    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/storage.py:651(pickle_storage_type)
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_namedtensor_internals.py:10(check_serializing_named_tensor)
+       92    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/sampler.py:110(num_samples)
+      240    0.000    0.000    0.000    0.000 {method 'nbytes' of 'torch._C.StorageBase' objects}
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:99(_get_distributed_settings)
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:75(create_fetcher)
+      480    0.000    0.000    0.000    0.000 {method 'data_ptr' of 'torch._C.StorageBase' objects}
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/hooks.py:54(warn_if_has_hooks)
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+       12    0.000    0.000    0.000    0.000 {built-in method posix.stat}
+       39    0.000    0.000    0.000    0.000 {method 'match' of 're.Pattern' objects}
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/storage.py:571(element_size)
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:453(__len__)
+       30    0.000    0.000    0.002    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:376(_get_iterator)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/format.py:558(_filter_header)
+      120    0.000    0.000    0.000    0.000 {method 'stride' of 'torch._C._TensorBase' objects}
+      291    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+      460    0.000    0.000    0.000    0.000 {method 'items' of 'collections.OrderedDict' objects}
+      282    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x100a72920}
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py:48(__init__)
+      3/2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:306(inner)
+      120    0.000    0.000    0.000    0.000 {method '_storage' of 'torch._C._TensorBase' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/tokenize.py:185(untokenize)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:391(register_parameter)
+       30    0.000    0.000    0.002    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:422(__iter__)
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:239(__init__)
+      120    0.000    0.000    0.000    0.000 {method 'data_ptr' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/cp437.py:1(<module>)
+      120    0.000    0.000    0.000    0.000 {method 'has_names' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
+      120    0.000    0.000    0.000    0.000 {method 'storage_offset' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method io.open_code}
+        6    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:309(__init__)
+       91    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:437(_auto_collation)
+        1    0.000    0.000    0.000    0.000 {built-in method io.open}
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:560(is_initialized)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1478(open)
+       60    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:441(_index_sampler)
+      131    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+      120    0.000    0.000    0.001    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/storage.py:648(size)
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:452(__exit__)
+        1    0.000    0.000    0.001    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1326(_RealGetContents)
+       15    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1272(__setattr__)
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:354(_check_dill_version)
+      120    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/storage.py:455(untyped)
+      2/1    0.000    0.000   26.705   26.705 {built-in method builtins.exec}
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py:8(__init__)
+        8    0.000    0.000    0.000    0.000 {built-in method torch._C._log_api_usage_once}
+        1    0.000    0.000   26.705   26.705 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:981(main)
+        4    0.000    0.000    0.000    0.000 {built-in method zlib.decompressobj}
+        2    0.000    0.000    0.271    0.136 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/npyio.py:232(__getitem__)
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:233(_is_path)
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/distributed/__init__.py:8(is_available)
+        9    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/_collections_abc.py:816(get)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/optimizer.py:300(add_param_group)
+        1    0.000    0.000    0.002    0.002 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/npyio.py:263(load)
+        2    0.000    0.000    0.001    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/init.py:366(kaiming_uniform_)
+     18/2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/ast.py:84(_convert)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/format.py:288(descr_to_dtype)
+       39    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/tokenize.py:172(add_whitespace)
+        2    0.000    0.000    0.002    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/linear.py:90(__init__)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:790(__init__)
+        1    0.000    0.000    0.271    0.271 /Users/alejandranavarrocastillo/Documents/GitHub/dtu_mlops_s2_cookiecutter/src/models/train_model.py:31(__init__)
+       10    0.000    0.000    0.000    0.000 {built-in method _struct.unpack}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/codecs.py:1071(<dictcomp>)
+        8    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/posixpath.py:71(join)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/gettext.py:211(_expand_lang)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/gettext.py:542(find)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.access}
+      150    0.000    0.000    0.000    0.000 {method 'values' of 'collections.OrderedDict' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:221(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/utils.py:1032(safe_eval)
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/sampler.py:135(__len__)
+       11    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/parameter.py:8(__instancecheck__)
+    20/19    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:412(__setattr__)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/ast.py:54(literal_eval)
+        2    0.000    0.000    0.001    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/linear.py:103(reset_parameters)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/npyio.py:209(close)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/locale.py:657(getpreferredencoding)
+       10    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:533(__exit__)
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/__init__.py:43(normalize_encoding)
+        8    0.000    0.000    0.000    0.000 {method 'dim' of 'torch._C._TensorBase' objects}
+       41    0.000    0.000    0.000    0.000 <string>:1(<lambda>)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:257(_EndRecData)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2444(__init__)
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/globals.py:50(pop_context)
+     14/6    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1847(named_modules)
+       32    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1034(close)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2004(__init__)
+       30    0.000    0.000    0.000    0.000 {method 'getvalue' of '_io.BytesIO' objects}
+        5    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1675(_named_members)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:139(__exit__)
+        1    0.000    0.000    0.001    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/npyio.py:91(zipfile_factory)
+       16    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:986(__setattr__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1536(find_spec)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:128(<listcomp>)
+        1    0.000    0.000    0.001    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1216(__init__)
+       30    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/serialization.py:242(__enter__)
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:950(get_code)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/__init__.py:71(search_function)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/locale.py:396(normalize)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:921(_find_spec)
+        1    0.000    0.000    0.002    0.002 /Users/alejandranavarrocastillo/Documents/GitHub/dtu_mlops_s2_cookiecutter/src/models/model.py:6(__init__)
+        6    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_decode}
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/init.py:284(_calculate_fan_in_and_fan_out)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/codecs.py:94(__new__)
+        9    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/os.py:675(__getitem__)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:344(__init__)
+        5    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:146(_type_check)
+        1    0.000    0.000    0.001    0.001 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/npyio.py:182(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/optimizer.py:45(__init__)
+        3    0.000    0.000    0.000    0.000 {built-in method _locale.setlocale}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1261(get_help_option)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/init.py:67(calculate_gain)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:256(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:878(make_context)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2565(_parse_decls)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:179(_get_module_lock)
+        1    0.000    0.000    0.000    0.000 {built-in method torch.set_vital}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:1016(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/format.py:223(read_magic)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/grad_mode.py:126(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:49(_unpack_args)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/_unicodefun.py:6(_verify_python_env)
+       42    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2339(handle_parse_result)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:380(cache_from_source)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/posixpath.py:140(basename)
+        2    0.000    0.000    0.000    0.000 {built-in method sys.exc_info}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.__import__}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:987(_find_and_load_unlocked)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:679(exit)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1361(parse_args)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/gettext.py:583(translation)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/storage.py:247(_dtype_to_storage_type_map)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/parameter.py:30(__new__)
+        1    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1022(_find_and_load)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:100(acquire)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/locale.py:362(_replace_encoding)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1070(get_data)
+        4    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1253(get_help_option_names)
+        8    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/genericpath.py:16(exists)
+       16    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:935(_is_dunder)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:102(__init__)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:698(_get_decompressor)
+        6    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/cp437.py:14(decode)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:664(_load_unlocked)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:452(__init__)
+       35    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:670(_compile_bytecode)
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/globals.py:45(push_context)
+        2    0.000    0.000    0.000    0.000 {method 'flush' of 'zlib.Decompress' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:579(close)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/grad_mode.py:131(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:336(register_buffer)
+        8    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1273(remove_from)
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/locale.py:605(setlocale)
+        4    0.000    0.000    0.000    0.000 {method 'readline' of '_io.StringIO' objects}
+       13    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/types.py:959(convert_type)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:492(_init_module_attrs)
+       29    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+       39    0.000    0.000    0.000    0.000 {method 'span' of 're.Match' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/tokenize.py:259(untokenize)
+        5    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1937(_fpclose)
+        1    0.000    0.000   26.705   26.705 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1126(__call__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:1350(__init_subclass__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2842(consume_value)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:160(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/types.py:827(convert)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2243(type_cast_value)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:126(_path_join)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/typing_extensions.py:123(_collect_type_vars)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/cp437.py:33(getregentry)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2223(consume_value)
+        9    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/os.py:755(encode)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:483(Union)
+        4    0.000    0.000    0.000    0.000 {function ZipExtFile.close at 0x7fb171237f40}
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:717(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:344(_process_args_for_args)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/functools.py:35(update_wrapper)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:749(close)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/optimizer.py:133(profile_hook_step)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:482(enter_context)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:458(scope)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2302(process_value)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:124(sort_key)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/sgd.py:93(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:523(Optional)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/optim/optimizer.py:130(_hook_for_profile)
+        1    0.000    0.000    0.000    0.000 {built-in method sys.exit}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:132(_path_split)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:291(add_option)
+        8    0.000    0.000    0.000    0.000 {method 'read' of '_io.BytesIO' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1098(_main_shell_completion)
+        6    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/format.py:644(<genexpr>)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:721(spec_from_file_location)
+        2    0.000    0.000    0.000    0.000 {built-in method _struct.calcsize}
+        1    0.000    0.000   26.705   26.705 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1384(invoke)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:84(_unpack_uint32)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1531(_get_spec)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/compat/py3k.py:49(isfileobj)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/init.py:356(_calculate_correct_fan)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/sampler.py:95(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1282(make_parser)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/utils.py:495(_detect_program_name)
+        2    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1399(_get_spec)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/types.py:68(__call__)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/init.py:12(_no_grad_uniform_)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1437(getinfo)
+        5    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1735(<lambda>)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:130(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/loss.py:210(__init__)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/autograd/grad_mode.py:135(__exit__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:125(release)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/ast.py:33(parse)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1821(close)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/gettext.py:664(dgettext)
+       11    0.000    0.000    0.000    0.000 {function _ParameterMeta.__instancecheck__ at 0x7fb170b00550}
+       10    0.000    0.000    0.000    0.000 {built-in method math.sqrt}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/_collections_abc.py:78(_check_methods)
+        9    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/posixpath.py:41(_get_sep)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:1223(__getitem__)
+       14    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/loss.py:20(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method _locale._get_locale_encoding}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:582(close)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/npyio.py:72(__init__)
+       11    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:877(exec_module)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1225(get_params)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/exceptions.py:286(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:214(_EndRecData64)
+       18    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+       14    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/tokenize.py:166(__init__)
+        5    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1713(named_parameters)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:267(_remove_dups_flatten)
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:109(split_opt)
+        5    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/module.py:1688(parameters)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:71(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:585(_classify_pyc)
+        2    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}
+        1    0.000    0.000   26.705   26.705 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/loss.py:29(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:66(_fetch)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:947(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:267(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:564(module_from_spec)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2599(<lambda>)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:115(iter_params_for_processing)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:279(helper)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:355(_process_args_for_options)
+        7    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:244(_verbose_message)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/init.py:122(uniform_)
+        5    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:663(_check_compression)
+        6    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:447(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2618(add_to_parser)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:326(parse_args)
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        8    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:510(_get_cached)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/io.py:60(__getattr__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:455(pop_all)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:509(_push_cm_exit)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:316(add_argument)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:140(_path_stat)
+       13    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/typing_extensions.py:111(_should_collect_from_parameters)
+      2/1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:401(__getitem__)
+        5    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:137(_type_convert)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:391(cached)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:442(_create_exit_wrapper)
+        9    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/_collections_abc.py:409(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/threading.py:90(RLock)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:514(_push_exit_callback)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:1147(copy_with)
+        9    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/nn/modules/activation.py:1380(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:461(_decodeExtra)
+       12    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+       13    0.000    0.000    0.000    0.000 {method 'isascii' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+        2    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/enum.py:783(__hash__)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:897(__exit__)
+        3    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        3    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:169(__enter__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:67(_relax_case)
+        1    0.000    0.000    0.000    0.000 {method 'startswith' of 'bytes' objects}
+        4    0.000    0.000    0.000    0.000 {method 'difference_update' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/npyio.py:222(__del__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/Documents/GitHub/dtu_mlops_s2_cookiecutter/src/models/train_model.py:29(NpzDataset)
+        6    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:1022(<genexpr>)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:542(_check_name_wrapper)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/tokenize.py:614(generate_tokens)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:618(_validate_timestamp_pyc)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1431(find_spec)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/os.py:1080(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/functools.py:65(wraps)
+        6    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:96(augment_usage_errors)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/sampler.py:226(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:826(find_spec)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:893(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2146(__repr__)
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:515(<genexpr>)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2187(get_default)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:198(cb)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/os.py:759(decode)
+        6    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+        2    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/gettext.py:741(gettext)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/codecs.py:1063(make_identity_dict)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1406(namelist)
+        4    0.000    0.000    0.000    0.000 {method 'seekable' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2768(get_default)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:357(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1040(__init__)
+        3    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:1234(<genexpr>)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/numpy/lib/format.py:196(_check_version)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1089(path_stats)
+        2    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
+        4    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2826(value_from_envvar)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:404(parent)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:308(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2810(resolve_envvar_value)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2952(add_to_parser)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:253(_deduplicate)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1356(_path_importer_cache)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:219(process)
+        1    0.000    0.000    0.000    0.000 {built-in method _weakref.proxy}
+        1    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        2    0.000    0.000    0.000    0.000 {method 'popleft' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/cp437.py:9(Codec)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:725(tell)
+        2    0.000    0.000    0.000    0.000 {method 'index' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _codecs.lookup}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:246(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1408(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/zipfile.py:1817(__del__)
+        1    0.000    0.000    0.000    0.000 {method 'isdisjoint' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.chr}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:214(__init__)
+        4    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/_jit_internal.py:1082(is_scripting)
+        2    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 {method '__enter__' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:387(multiprocessing_context)
+        2    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/typing_extensions.py:1814(_is_unpack)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:165(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:777(set_parameter_source)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:180(_path_isabs)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/_distutils_hack/__init__.py:89(find_spec)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/typing.py:380(__repr__)
+        2    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/types.py:584(convert)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/torch/utils/data/dataloader.py:482(check_worker_number_rationality)
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'set' objects}
+        4    0.000    0.000    0.000    0.000 {method 'reverse' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:647(lookup_default)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:1268(show_help)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2293(value_is_missing)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/cp437.py:21(IncrementalDecoder)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/core.py:2313(resolve_envvar_value)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/types.py:816(coerce_path_result)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:346(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/cp437.py:17(IncrementalEncoder)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/site-packages/click/parser.py:118(normalize_opt)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:874(create_module)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/cp437.py:25(StreamWriter)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:746(find_spec)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/contextlib.py:530(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/alejandranavarrocastillo/opt/anaconda3/envs/dtu_mlops/lib/python3.10/encodings/cp437.py:28(StreamReader)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(has_location)
+        1    0.000    0.000    0.000    0.000 {method '__init_subclass__' of 'object' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1065(get_filename)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.hash}
+
+

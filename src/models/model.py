@@ -1,6 +1,5 @@
 from torch import nn
 
-
 class MyAwesomeModel(nn.Module):
     """This is a model of a CNN with one hidden layer and sigmoid function activation."""
 
