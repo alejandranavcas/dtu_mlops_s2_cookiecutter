@@ -34,6 +34,8 @@ train: requirements
 	$(PYTHON_INTERPRETER) src/models/train_model.py models/
 
 ## Get the predictions
+predict:
+	$(PYTHON_INTERPRETER) src/models/predict_model.py models/
 
 
 ## Delete all compiled Python files

@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
+import cProfile
 import click
 import logging
+import pstats
+
 from pathlib import Path
 from dotenv import find_dotenv, load_dotenv
+
 import numpy as np
 import torch
 from torch import nn, optim
@@ -64,9 +68,13 @@ def main(model_dir):
 
         else:
             print(f"Training loss: {running_loss/len(trainloader)}")
+
+            #checkpoint = {'input_size': 784, 'output_size': 10, 'hidden_layers': [each.out_features for each in model.hidden_layers],'state_dict': model.state_dict()}
+            #torch.save(checkpoint, r"models/checkpoint.pth")
             torch.save(model.state_dict(), r"models/checkpoint.pth")
     
-    print("checkpoint.pth saved in models folder")
+    print("Finished training.")
+    print("checkpoint.pth saved in ./models folder")
 
 
 if __name__ == '__main__':
@@ -79,5 +87,17 @@ if __name__ == '__main__':
     # find .env automatically by walking up directories until it's found, then
     # load up the .env entries as environment variables
     load_dotenv(find_dotenv())
+
+    # Profiling with cProfile
+    cProfile.run("main()", "profiling/profile.dat") # creates profile.dat
+
+    with open("profiling/profile_time.txt", "w") as f: # creates profile_time.txt
+        p = pstats.Stats("profiling/profile.dat", stream=f)
+        p.sort_stats("time").print_stats()
+
+    with open("profiling/profile_calls.txt", "w") as f: # creates profile_calls.txt
+        p = pstats.Stats("profiling/profile.dat", stream=f)
+        p.sort_stats("calls").print_stats()
+    print("Profiling executed and profiling info saved in ./profiling folder")
 
     main()
